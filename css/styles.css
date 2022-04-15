@@ -192,6 +192,21 @@ padding-top: var(--section-gap);
 padding-bottom: var(--section-gap);
 }
 
+.feature-icon-list {
+  display: flex;
+}
+
+.feature-icon-item {
+  width: 270px;
+margin-bottom: 30px;
+background: var(--staff-bg-color);
+border-radius: 4px;
+}
+
+.feature-icon-item + .feature-icon-item {
+  margin-left: 30px;
+}
+
 .feature-list {
   display: flex;
 }
@@ -203,6 +218,11 @@ padding-bottom: var(--section-gap);
 
 .feature-item:nth-child(4n) {
   margin-right: 0;
+}
+
+.feature-icon-link {
+  display: flex;
+  padding: 25px 100px;
 }
 
 .feature-list .title {
@@ -322,7 +342,7 @@ fill: var(--primary-icon-color);
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-  background-color: var(--accent-color)
+  background-color: var(--accent-color);
 }
 
 .team-soc-link:hover .team-soc-icon {
