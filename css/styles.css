@@ -265,6 +265,64 @@ border-radius: 4px;
   margin-left: 30px;
 }
 
+/* --Сlients-- */
+.section-clients {
+  padding-top: var(--section-gap);
+  padding-bottom: var(--section-gap);
+}
+
+.container-clients{
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+align-items: center;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  left: 415px;
+  top: 2493px;
+  drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-link {
+  display: flex;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .clients-icon {
+    fill: var(--primary-icon-color);
+  }
+  
+  .clients-icon:hover,
+  .clients-iconk:focus {
+    fill: var(--accent-color);
+  }
+
 /* --Staff-- */
 .section-staff {
   padding-top: var(--section-gap);
@@ -392,6 +450,51 @@ fill: var(--primary-icon-color);
 
 .contacts-footer {
   margin-top: 20px;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+  position: absolute;
+  left: 516px;
+  top: 2751px;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1,14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.footer-soc-item + .footer-soc-item {
+  margin-left: 10px;
+}
+
+.footer-soc-link {
+width: 44px;
+height: 44px;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.footer-soc-icon {
+  fill: var(--primary-white-color);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* Portfolio */
