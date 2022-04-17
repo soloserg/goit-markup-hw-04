@@ -465,6 +465,7 @@ fill: var(--primary-icon-color);
 
 .footer-text {
   margin-bottom: 20px;
+  margin: auto;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
