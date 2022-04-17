@@ -30,7 +30,7 @@ body {
   list-style: none;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -87,6 +87,7 @@ body {
 .site-nav {
   display: flex;
 }
+
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -136,6 +137,11 @@ margin-right: 50px;
 }
 .link-tel {
   margin-left: 50px;
+}
+
+.mail-icon, .tel-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* --Hero-- */
@@ -202,6 +208,12 @@ margin-bottom: 30px;
 background: var(--staff-bg-color);
 border-radius: 4px;
 }
+
+.feature-icon-item:hover,
+.feature-icon-item:focus {
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 
 .feature-icon-item + .feature-icon-item {
   margin-left: 30px;
@@ -419,6 +431,14 @@ fill: var(--primary-icon-color);
   background-color: #2f303a;
 }
 
+.container-footer {
+  display: flex;
+}
+
+.footer-contacts-part {
+padding-left: 215px;
+}
+
 .contacts-list .link-mail {
   margin-bottom: 9px;
   color: var(--white-alpha-color);
@@ -452,20 +472,22 @@ fill: var(--primary-icon-color);
   margin-top: 20px;
 }
 
+.footer-soc-part {
+  margin-left: 70px;
+}
+
 .footer-soc-list {
   display: flex;
   justify-content: center;
   width: 206px;
   height: 80px;
-  margin-left: 70px;
-  position: absolute;
   left: 516px;
   top: 2751px;
 }
 
 .footer-text {
   margin-bottom: 20px;
-  margin: auto;
+  padding-top: 15px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -486,7 +508,7 @@ background: rgba(255, 255, 255, 0.1);
 border-radius: 50%;
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: center
 }
 
 .footer-soc-icon {
@@ -538,6 +560,13 @@ margin-left: 8px;
   background-color: var(--accent-color);
 }
 
+.service:hover,
+.service:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .about-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -560,6 +589,16 @@ margin-left: 8px;
 .link {
   text-decoration: none;
 
+}
+.gallery-link {
+  display: block;
+}
+
+.gallery-link:hover,
+.gallery-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
   .link .gallery-title {
