@@ -130,6 +130,8 @@ margin-right: 50px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -198,15 +200,14 @@ padding-top: var(--section-gap);
 padding-bottom: var(--section-gap);
 }
 
-.feature-icon-list {
-  display: flex;
-}
-
-.feature-icon-item {
-  width: 270px;
-margin-bottom: 30px;
+.feature-icon-thumb {
+  height: 120px;
+  margin-bottom: 30px;
 background: var(--staff-bg-color);
 border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .feature-icon-item + .feature-icon-item {
@@ -277,13 +278,6 @@ border-radius: 4px;
   padding-bottom: var(--section-gap);
 }
 
-.container-clients{
-display: flex;
-flex-direction: column;
-margin: 0 auto;
-align-items: center;
-}
-
 .clients {
   display: flex;
   flex-wrap: wrap;
@@ -300,12 +294,6 @@ align-items: center;
 
 .clients-item {
   width: 170px;
-  height: 92px;
-  left: 415px;
-  top: 2493px;
-  border: 1px solid #AFB1B8;
-  box-sizing: border-box;
-  border-radius: 4px;
 }
 
 .clients-item + .clients-item {
@@ -314,18 +302,18 @@ align-items: center;
 
 .clients-link {
   display: flex;
-  padding: 16px 32px;
   align-items: center;
   justify-content: center;
-  }
-
-  .clients-icon {
-    fill: var(--primary-icon-color);
+  border-radius: 4px;
+  border: 1px solid #AFB1B8;
+  height: 92px;
+  fill: var(--primary-icon-color);
   }
   
-  .clients-icon:hover,
-  .clients-iconk:focus {
+  .clients-link:hover,
+  .clients-link:focus {
     fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
   }
 
 /* --Staff-- */
@@ -430,10 +418,10 @@ fill: var(--primary-icon-color);
 }
 
 .footer-contacts-part {
-padding-left: 215px;
+
 }
 
-.contacts-list .link-mail {
+.link-mail {
   margin-bottom: 9px;
   color: var(--white-alpha-color);
   font-style: normal;
@@ -442,7 +430,7 @@ padding-left: 215px;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.contacts-list .link-tel {
+.link-tel {
   margin-left: 0;
   color: var(--white-alpha-color);
   font-style: normal;
@@ -473,10 +461,7 @@ padding-left: 215px;
 .footer-soc-list {
   display: flex;
   justify-content: center;
-  width: 206px;
-  height: 80px;
-  left: 516px;
-  top: 2751px;
+  
 }
 
 .footer-text {
