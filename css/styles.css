@@ -137,8 +137,8 @@ margin-right: 50px;
 .contacts .link:focus {
   color: var(--accent-color);
 }
-.link-tel {
-  margin-left: 50px;
+.link-tel-head {
+  margin-left: 30px;
 }
 
 .mail-icon, .tel-icon {
