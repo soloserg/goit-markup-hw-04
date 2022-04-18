@@ -433,6 +433,7 @@ fill: var(--primary-icon-color);
 
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-contacts-part {
@@ -487,7 +488,6 @@ padding-left: 215px;
 
 .footer-text {
   margin-bottom: 20px;
-  padding-top: 15px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
